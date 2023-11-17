@@ -31,105 +31,107 @@
         </p>
         <a href="index.html">Home</a>
       </header>
-      <div class="wrapper wrapper--w680">
-        <div class="card card-4">
-          <div class="card-body">
-            <h2 class="title">Registration Form</h2>
+      <form id="petForm">
+        <div class="wrapper wrapper--w680">
+          <div class="card card-4">
+            <div class="card-body">
+              <h2 class="title">Registration Form</h2>
 
-            <div class="row row-space">
               <div class="row row-space">
-                <div class="col-2">
-                  <div class="input-group">
-                    <label class="label"> name</label>
-                    <input
-                      class="input--style-4"
-                      type="text"
-                      name="first_name"
-                      id="txtName"
-                    />
-                  </div>
-                </div>
-                <div class="col-2">
-                  <div class="input-group">
-                    <label class="label"> Age</label>
-                    <input
-                      class="input--style-4"
-                      type="number"
-                      name="age"
-                      id="txtAge"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="row row-space">
-                <div class="col-2">
-                  <div class="input-group">
-                    <label class="label">Breed</label>
-                    <div class="input-group-icon">
+                <div class="row row-space">
+                  <div class="col-2">
+                    <div class="input-group">
+                      <label class="label"> name</label>
                       <input
                         class="input--style-4"
                         type="text"
-                        name="breed"
-                        id="txtBreed"
+                        name="first_name"
+                        id="txtName"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="input-group">
+                      <label class="label"> Age</label>
+                      <input
+                        class="input--style-4"
+                        type="number"
+                        name="age"
+                        id="txtAge"
                       />
                     </div>
                   </div>
                 </div>
-                <div class="col-2">
-                  <div class="input-group">
-                    <label class="label">Gender</label>
-                    <div class="input-group-icon">
+                <div class="row row-space">
+                  <div class="col-2">
+                    <div class="input-group">
+                      <label class="label">Breed</label>
+                      <div class="input-group-icon">
+                        <input
+                          class="input--style-4"
+                          type="text"
+                          name="breed"
+                          id="txtBreed"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="input-group">
+                      <label class="label">Gender</label>
+                      <div class="input-group-icon">
+                        <input
+                          class="input--style-4"
+                          type="text"
+                          name="breed"
+                          id="txtGender"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row row-space">
+                  <div class="col-2">
+                    <div class="input-group">
+                      <label class="label">Service</label>
                       <input
                         class="input--style-4"
                         type="text"
-                        name="breed"
-                        id="txtGender"
+                        name="service"
+                        id="txtService"
                       />
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="row row-space">
-                <div class="col-2">
-                  <div class="input-group">
-                    <label class="label">Service</label>
-                    <input
-                      class="input--style-4"
-                      type="text"
-                      name="service"
-                      id="txtService"
-                    />
-                  </div>
+              <div class="input-group">
+                <label class="label">type</label>
+                <div class="rs-select2 js-select-simple select--no-search">
+                  <select name="subject" id="selectType">
+                    <option disabled="disabled" selected="selected">
+                      Choose Animal
+                    </option>
+                    <option>Dog</option>
+                    <option>Cat</option>
+                    <option>Bunny</option>
+                  </select>
+                  <div class="select-dropdown"></div>
                 </div>
               </div>
-            </div>
-            <div class="input-group">
-              <label class="label">type</label>
-              <div class="rs-select2 js-select-simple select--no-search">
-                <select name="subject" id="selectType">
-                  <option disabled="disabled" selected="selected">
-                    Choose Animal
-                  </option>
-                  <option>Dog</option>
-                  <option>Cat</option>
-                  <option>Bunny</option>
-                </select>
-                <div class="select-dropdown"></div>
-              </div>
-            </div>
 
-            <div class="p-t-15">
-              <button
-                id="buttonPet"
-                class="btn btn--radius-2 btn--blue"
-                type="submit"
-              >
-                Submit
-              </button>
+              <div class="p-t-15">
+                <button
+                  id="buttonPet"
+                  class="btn btn--radius-2 btn--blue"
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </form>
     </div>
     <script src="/scriptsPS/PSscripts.js"></script>
   </body>

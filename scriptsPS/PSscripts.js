@@ -70,5 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // acts like an onclick when I click the button it'll do the register pet function
   document.getElementById("buttonPet").addEventListener("click", function () {
     registerPet();
+    // after they click the button it will register their pet to the array then reset the form
+    document.getElementById("petForm").reset();
   });
 });
