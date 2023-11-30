@@ -16,98 +16,85 @@
 
     <!-- Main CSS-->
     <link
-      href="/imgs/colorlib-regform-4/css/main.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
-      media="all"
     />
+    <link href="petsalon.css/register.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
-      <header>
-        <h1 style="text-align: center">Welcome to my Pet Salon</h1>
-        <!-- create a style class for header-->
-        <p style="text-align: center">
+    <div class="container">
+      <header class="text-center my-5">
+        <h1>Welcome to my Pet Salon</h1>
+        <p>
           Please register your Pet so we may schedule you for an appointment
         </p>
         <a href="index.html">Home</a>
+        <a href="about.html">About</a>
       </header>
       <form id="petForm">
-        <div class="wrapper wrapper--w680">
-          <div class="card card-4">
-            <div class="card-body">
-              <h2 class="title">Registration Form</h2>
-
-              <div class="row row-space">
-                <div class="row row-space">
-                  <div class="col-2">
-                    <div class="input-group">
-                      <label class="label"> name</label>
-                      <input
-                        class="input--style-4"
-                        type="text"
-                        name="first_name"
-                        id="txtName"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-2">
-                    <div class="input-group">
-                      <label class="label"> Age</label>
-                      <input
-                        class="input--style-4"
-                        type="number"
-                        name="age"
-                        id="txtAge"
-                      />
-                    </div>
-                  </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title text-center mb-4">Registration Form</h2>
+                <div class="form-group">
+                  <label for="txtName">Name</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="first_name"
+                    id="txtName"
+                    required
+                  />
                 </div>
-                <div class="row row-space">
-                  <div class="col-2">
-                    <div class="input-group">
-                      <label class="label">Breed</label>
-                      <div class="input-group-icon">
-                        <input
-                          class="input--style-4"
-                          type="text"
-                          name="breed"
-                          id="txtBreed"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-2">
-                    <div class="input-group">
-                      <label class="label">Gender</label>
-                      <div class="input-group-icon">
-                        <input
-                          class="input--style-4"
-                          type="text"
-                          name="breed"
-                          id="txtGender"
-                        />
-                      </div>
-                    </div>
-                  </div>
+                <div class="form-group">
+                  <label for="txtAge">Age</label>
+                  <input
+                    class="form-control"
+                    type="number"
+                    name="age"
+                    id="txtAge"
+                    required
+                  />
                 </div>
-                <div class="row row-space">
-                  <div class="col-2">
-                    <div class="input-group">
-                      <label class="label">Service</label>
-                      <input
-                        class="input--style-4"
-                        type="text"
-                        name="service"
-                        id="txtService"
-                      />
-                    </div>
-                  </div>
+                <div class="form-group">
+                  <label for="txtBreed">Breed</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="breed"
+                    id="txtBreed"
+                    required
+                  />
                 </div>
-              </div>
-              <div class="input-group">
-                <label class="label">type</label>
-                <div class="rs-select2 js-select-simple select--no-search">
-                  <select name="subject" id="selectType">
+                <div class="form-group">
+                  <label for="txtGender">Gender</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="gender"
+                    id="txtGender"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="txtService">Service</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="service"
+                    id="txtService"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="selectType">Type</label>
+                  <select
+                    class="form-control"
+                    name="subject"
+                    id="selectType"
+                    required
+                  >
                     <option disabled="disabled" selected="selected">
                       Choose Animal
                     </option>
@@ -115,14 +102,10 @@
                     <option>Cat</option>
                     <option>Bunny</option>
                   </select>
-                  <div class="select-dropdown"></div>
                 </div>
-              </div>
-
-              <div class="p-t-15">
                 <button
                   id="buttonPet"
-                  class="btn btn--radius-2 btn--blue"
+                  class="btn btn-primary btn-block"
                   type="submit"
                 >
                   Submit
@@ -132,7 +115,30 @@
           </div>
         </div>
       </form>
+
+      <section class="petsSection">
+        <div class="tableContainer">
+          <h2>Registered Pets</h2>
+          <table id="petTable">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Service</th>
+                <th>Breed</th>
+                <th>Type</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="petTableBody"></tbody>
+          </table>
+        </div>
+        <div id="deleteButtons"></div>
+      </section>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="/scriptsPS/register.js"></script>
+      <script src="/scriptsPS/display.js"></script>
     </div>
-    <script src="/scriptsPS/PSscripts.js"></script>
   </body>
 </html>

@@ -7,30 +7,51 @@
     <link rel="stylesheet" href="/petsalon.css/salonstyles.css" />
   </head>
   <body>
+    <!-- biggest container positive 1-2 -->
     <!-- background video and pet count-->
-    <section class="petsContainer">
+
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Pet Salon</h2>
+        <div class="toggle"></div>
+      </header>
       <video
         src="imgs/pexels-tima-miroshnichenko-6131733 (2160p).mp4"
         muted
         loop
         autoplay
       ></video>
-      <header>
-        <h1>Welcome to Our Pet Salon!</h1>
-        <p id="registeredPetsCount">
-          <a href="register.html"> Register a Pet</a>
-          <!-- number of pets will go here-->
-          Registered Pets: <span id="count">0</span>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>We are the Number One Pet Salon around</h2>
+        <h3>Avaliable for all your pet grooming needs</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
         </p>
-      </header>
-    </section>
-
-    <section class="petsSection">
-      <h2>Registered Pets</h2>
-      <ul id="petList">
-        <!-- pet names will be put here -->
+        <a href="#">More About us</a>
+      </div>
+      <ul class="social">
+        <li>
+          <a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png" /></a>
+        </li>
       </ul>
     </section>
-    <script src="/scriptsPS/PSscripts.js"></script>
+    <div class="menu">
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </div>
+
+    <script src="scriptsPS/navbar.js"></script>
   </body>
 </html>
