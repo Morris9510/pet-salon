@@ -10,19 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const inputBreed = document.getElementById("txtBreed").value;
     const inputType = document.getElementById("selectType").value;
 
-    function validateForm() {
-      const name = document.getElementById("txtName").value;
-      const breed = document.getElementById("txtBreed").value;
-      const service = document.getElementById("txtService").value;
-      const type = document.getElementById("selectType").value;
-
-      if (!name || !breed || !service || type === "Choose Animal") {
-        alert("Please fill out all required fields.");
-        return false; // Prevents form submission if validation fails
-      }
-
-      return true; // Allows form submission if validation passes
-    }
     const newPet = {
       name: inputName,
       age: inputAge,

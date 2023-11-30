@@ -41,21 +41,3 @@ document.addEventListener("DOMContentLoaded", function () {
   // Call the function to display registered pets when the page loads
   displayRegisteredPets();
 });
-
-/*  function displayTable(){
-  tr id = ${pet.id}
-  let row=""
-  const TABLE = document.getElementById("Pet table")
-  for ( let i=0; i<pets.length; i++ ){
-    let pet = pets[i];
-    row+='
-    <tr>
-    <td>${pet.nameP}</td>
-    <td>${pet.name}</td>
-    <td>${pet.gender}</td>
-    <td> <button> Delete </button> </td>
-    </tr>
-    `;
-  }
-  table.innerHTML=row;
-} */
